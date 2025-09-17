@@ -11,4 +11,23 @@ public class Vehicle {
     private Customer Customer;
     private ArrayList<Salesperson> Salesperson;
     private ArrayList<Vehicle> Vehicle;
+
+    public Vehicle(int vehicleSerialNumber, String name, String model, int year, String manufacturer, int baseCost) {
+        this.vehicleSerialNumber = vehicleSerialNumber;
+        this.name = name;
+        this.model = model;
+        this.year = year;
+        this.manufacturer = manufacturer;
+        this.baseCost = baseCost;
+    }
+
+    public String toString() {
+        return "Vehicle Information:\n" +
+        "Serial Number: " + vehicleSerialNumber + "\n" +
+        "Name: " + name + "\n" +
+        "Model: " + model + "\n" +
+        "Year: " + year + "\n" + 
+        "Manufacturer: " + manufacturer + "\n" +
+        "Base Cost: $" + baseCost;
+    }
 }
